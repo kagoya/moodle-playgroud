@@ -258,6 +258,8 @@ jobs:
           rsync -a --delete site/ _site/docs/
           rm -rf site
           touch _site/.nojekyll
+          # Fork deployments use the repository Pages URL.
+          rm -f _site/CNAME
           # Split oversized core bundles (>25 MiB) into parts so the site can be
           # served from Cloudflare Pages (25 MiB/file cap). The loader reassembles
           # them; e2e below serves this same _site, exercising the chunked path.
@@ -279,7 +281,7 @@ jobs:
       # ── Cloudflare Pages preview (same-repo PRs) ──
       - name: Deploy to Cloudflare Pages (PR preview)
         id: cf_preview
-        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        if: github.repository == 'ateeducacion/moodle-playground' && github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           HEAD_REF: ${{ github.head_ref }}
@@ -294,7 +296,7 @@ jobs:
           { echo "deploy_url=$deploy_url"; echo "alias_url=$alias_url"; } >> "$GITHUB_OUTPUT"
 
       - name: Comment preview URL on PR
-        if: always() && github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        if: always() && github.repository == 'ateeducacion/moodle-playground' && github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
         env:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
@@ -393,7 +395,7 @@ jobs:
 
   # ── Deploy to Cloudflare Pages (production; push to main or scheduled/manual rebuild; gated on e2e) ──
   deploy-cloudflare:
-    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    if: github.repository == 'ateeducacion/moodle-playground' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
     needs: [lint-and-test, build, e2e]
     runs-on: ubuntu-latest
     steps:
