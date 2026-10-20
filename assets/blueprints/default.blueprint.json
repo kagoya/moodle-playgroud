@@ -8,7 +8,7 @@
     "debug": 0,
     "debugdisplay": 0
   },
-  "landingPage": "/",
+  "landingPage": "/my/",
   "constants": {
     "ADMIN_USER": "admin",
     "ADMIN_PASS": "password",
@@ -21,9 +21,9 @@
         "adminUser": "{{ADMIN_USER}}",
         "adminPass": "{{ADMIN_PASS}}",
         "adminEmail": "{{ADMIN_EMAIL}}",
-        "siteName": "Moodle Playground",
-        "locale": "en",
-        "timezone": "UTC"
+        "siteName": "Kagoya Moodle Playground",
+        "locale": "ja",
+        "timezone": "Asia/Tokyo"
       }
     },
     {
@@ -31,25 +31,1069 @@
       "username": "{{ADMIN_USER}}"
     },
     {
+      "step": "setConfigs",
+      "critical": true,
+      "configs": [
+        {
+          "name": "lang",
+          "value": "ja"
+        },
+        {
+          "name": "fullnamedisplay",
+          "value": "lastname firstname"
+        },
+        {
+          "name": "alternativefullnameformat",
+          "value": "lastname firstname"
+        }
+      ]
+    },
+    {
+      "step": "createUsers",
+      "critical": true,
+      "users": [
+        {
+          "username": "teacher01",
+          "password": "teacher01",
+          "email": "teacher01@moodleplayground.ac.jp",
+          "lastname": "t01相沢",
+          "firstname": "武史"
+        },
+        {
+          "username": "teacher02",
+          "password": "teacher02",
+          "email": "teacher02@moodleplayground.ac.jp",
+          "lastname": "t02浅井",
+          "firstname": "陽菜"
+        },
+        {
+          "username": "teacher03",
+          "password": "teacher03",
+          "email": "teacher03@moodleplayground.ac.jp",
+          "lastname": "t03川口",
+          "firstname": "実"
+        },
+        {
+          "username": "teacher04",
+          "password": "teacher04",
+          "email": "teacher04@moodleplayground.ac.jp",
+          "lastname": "t04木村",
+          "firstname": "武史"
+        },
+        {
+          "username": "teacher05",
+          "password": "teacher05",
+          "email": "teacher05@moodleplayground.ac.jp",
+          "lastname": "t05坂本",
+          "firstname": "誠"
+        },
+        {
+          "username": "teacher06",
+          "password": "teacher06",
+          "email": "teacher06@moodleplayground.ac.jp",
+          "lastname": "t06杉本",
+          "firstname": "大輔"
+        },
+        {
+          "username": "teacher07",
+          "password": "teacher07",
+          "email": "teacher07@moodleplayground.ac.jp",
+          "lastname": "t07瀬戸",
+          "firstname": "涼子"
+        },
+        {
+          "username": "teacher08",
+          "password": "teacher08",
+          "email": "teacher08@moodleplayground.ac.jp",
+          "lastname": "t08水野",
+          "firstname": "大輔"
+        },
+        {
+          "username": "teacher09",
+          "password": "teacher09",
+          "email": "teacher09@moodleplayground.ac.jp",
+          "lastname": "t09山口",
+          "firstname": "大輔"
+        },
+        {
+          "username": "teacher10",
+          "password": "teacher10",
+          "email": "teacher10@moodleplayground.ac.jp",
+          "lastname": "t10吉川",
+          "firstname": "沙織"
+        },
+        {
+          "username": "student01",
+          "password": "student01",
+          "email": "student01@moodleplayground.ac.jp",
+          "lastname": "s01相川",
+          "firstname": "健太"
+        },
+        {
+          "username": "student02",
+          "password": "student02",
+          "email": "student02@moodleplayground.ac.jp",
+          "lastname": "s02相沢",
+          "firstname": "拓也"
+        },
+        {
+          "username": "student03",
+          "password": "student03",
+          "email": "student03@moodleplayground.ac.jp",
+          "lastname": "s03青木",
+          "firstname": "大輔"
+        },
+        {
+          "username": "student04",
+          "password": "student04",
+          "email": "student04@moodleplayground.ac.jp",
+          "lastname": "s04青山",
+          "firstname": "優子"
+        },
+        {
+          "username": "student05",
+          "password": "student05",
+          "email": "student05@moodleplayground.ac.jp",
+          "lastname": "s05赤井",
+          "firstname": "和也"
+        },
+        {
+          "username": "student06",
+          "password": "student06",
+          "email": "student06@moodleplayground.ac.jp",
+          "lastname": "s06秋山",
+          "firstname": "愛子"
+        },
+        {
+          "username": "student07",
+          "password": "student07",
+          "email": "student07@moodleplayground.ac.jp",
+          "lastname": "s07浅井",
+          "firstname": "香織"
+        },
+        {
+          "username": "student08",
+          "password": "student08",
+          "email": "student08@moodleplayground.ac.jp",
+          "lastname": "s08安達",
+          "firstname": "結衣"
+        },
+        {
+          "username": "student09",
+          "password": "student09",
+          "email": "student09@moodleplayground.ac.jp",
+          "lastname": "s09阿部",
+          "firstname": "遥"
+        },
+        {
+          "username": "student10",
+          "password": "student10",
+          "email": "student10@moodleplayground.ac.jp",
+          "lastname": "s10天野",
+          "firstname": "亮"
+        },
+        {
+          "username": "student11",
+          "password": "student11",
+          "email": "student11@moodleplayground.ac.jp",
+          "lastname": "s11荒井",
+          "firstname": "葵"
+        },
+        {
+          "username": "student12",
+          "password": "student12",
+          "email": "student12@moodleplayground.ac.jp",
+          "lastname": "s12有田",
+          "firstname": "千尋"
+        },
+        {
+          "username": "student13",
+          "password": "student13",
+          "email": "student13@moodleplayground.ac.jp",
+          "lastname": "s13池田",
+          "firstname": "翔太"
+        },
+        {
+          "username": "student14",
+          "password": "student14",
+          "email": "student14@moodleplayground.ac.jp",
+          "lastname": "s14石井",
+          "firstname": "博之"
+        },
+        {
+          "username": "student15",
+          "password": "student15",
+          "email": "student15@moodleplayground.ac.jp",
+          "lastname": "s15石川",
+          "firstname": "悠太"
+        },
+        {
+          "username": "student16",
+          "password": "student16",
+          "email": "student16@moodleplayground.ac.jp",
+          "lastname": "s16石田",
+          "firstname": "武史"
+        },
+        {
+          "username": "student17",
+          "password": "student17",
+          "email": "student17@moodleplayground.ac.jp",
+          "lastname": "s17泉",
+          "firstname": "和花"
+        },
+        {
+          "username": "student18",
+          "password": "student18",
+          "email": "student18@moodleplayground.ac.jp",
+          "lastname": "s18井上",
+          "firstname": "翔太"
+        },
+        {
+          "username": "student19",
+          "password": "student19",
+          "email": "student19@moodleplayground.ac.jp",
+          "lastname": "s19今井",
+          "firstname": "一郎"
+        },
+        {
+          "username": "student20",
+          "password": "student20",
+          "email": "student20@moodleplayground.ac.jp",
+          "lastname": "s20岩崎",
+          "firstname": "由紀"
+        },
+        {
+          "username": "student21",
+          "password": "student21",
+          "email": "student21@moodleplayground.ac.jp",
+          "lastname": "s21岩田",
+          "firstname": "夏美"
+        },
+        {
+          "username": "student22",
+          "password": "student22",
+          "email": "student22@moodleplayground.ac.jp",
+          "lastname": "s22上田",
+          "firstname": "葵"
+        },
+        {
+          "username": "student23",
+          "password": "student23",
+          "email": "student23@moodleplayground.ac.jp",
+          "lastname": "s23植村",
+          "firstname": "健太"
+        },
+        {
+          "username": "student24",
+          "password": "student24",
+          "email": "student24@moodleplayground.ac.jp",
+          "lastname": "s24内田",
+          "firstname": "沙織"
+        },
+        {
+          "username": "student25",
+          "password": "student25",
+          "email": "student25@moodleplayground.ac.jp",
+          "lastname": "s25宇野",
+          "firstname": "遥"
+        },
+        {
+          "username": "student26",
+          "password": "student26",
+          "email": "student26@moodleplayground.ac.jp",
+          "lastname": "s26遠藤",
+          "firstname": "亮"
+        },
+        {
+          "username": "student27",
+          "password": "student27",
+          "email": "student27@moodleplayground.ac.jp",
+          "lastname": "s27大久保",
+          "firstname": "陽菜"
+        },
+        {
+          "username": "student28",
+          "password": "student28",
+          "email": "student28@moodleplayground.ac.jp",
+          "lastname": "s28大島",
+          "firstname": "拓也"
+        },
+        {
+          "username": "student29",
+          "password": "student29",
+          "email": "student29@moodleplayground.ac.jp",
+          "lastname": "s29太田",
+          "firstname": "陽菜"
+        },
+        {
+          "username": "student30",
+          "password": "student30",
+          "email": "student30@moodleplayground.ac.jp",
+          "lastname": "s30大塚",
+          "firstname": "奈緒"
+        },
+        {
+          "username": "student31",
+          "password": "student31",
+          "email": "student31@moodleplayground.ac.jp",
+          "lastname": "s31大西",
+          "firstname": "恵美"
+        },
+        {
+          "username": "student32",
+          "password": "student32",
+          "email": "student32@moodleplayground.ac.jp",
+          "lastname": "s32大野",
+          "firstname": "夏美"
+        },
+        {
+          "username": "student33",
+          "password": "student33",
+          "email": "student33@moodleplayground.ac.jp",
+          "lastname": "s33岡田",
+          "firstname": "陽菜"
+        },
+        {
+          "username": "student34",
+          "password": "student34",
+          "email": "student34@moodleplayground.ac.jp",
+          "lastname": "s34小川",
+          "firstname": "和花"
+        },
+        {
+          "username": "student35",
+          "password": "student35",
+          "email": "student35@moodleplayground.ac.jp",
+          "lastname": "s35小野",
+          "firstname": "恵美"
+        },
+        {
+          "username": "student36",
+          "password": "student36",
+          "email": "student36@moodleplayground.ac.jp",
+          "lastname": "s36金子",
+          "firstname": "和也"
+        },
+        {
+          "username": "student37",
+          "password": "student37",
+          "email": "student37@moodleplayground.ac.jp",
+          "lastname": "s37川上",
+          "firstname": "一郎"
+        },
+        {
+          "username": "student38",
+          "password": "student38",
+          "email": "student38@moodleplayground.ac.jp",
+          "lastname": "s38川口",
+          "firstname": "亮"
+        },
+        {
+          "username": "student39",
+          "password": "student39",
+          "email": "student39@moodleplayground.ac.jp",
+          "lastname": "s39川村",
+          "firstname": "美咲"
+        },
+        {
+          "username": "student40",
+          "password": "student40",
+          "email": "student40@moodleplayground.ac.jp",
+          "lastname": "s40菊池",
+          "firstname": "武史"
+        },
+        {
+          "username": "student41",
+          "password": "student41",
+          "email": "student41@moodleplayground.ac.jp",
+          "lastname": "s41木村",
+          "firstname": "愛子"
+        },
+        {
+          "username": "student42",
+          "password": "student42",
+          "email": "student42@moodleplayground.ac.jp",
+          "lastname": "s42熊谷",
+          "firstname": "直樹"
+        },
+        {
+          "username": "student43",
+          "password": "student43",
+          "email": "student43@moodleplayground.ac.jp",
+          "lastname": "s43黒田",
+          "firstname": "蓮"
+        },
+        {
+          "username": "student44",
+          "password": "student44",
+          "email": "student44@moodleplayground.ac.jp",
+          "lastname": "s44後藤",
+          "firstname": "誠"
+        },
+        {
+          "username": "student45",
+          "password": "student45",
+          "email": "student45@moodleplayground.ac.jp",
+          "lastname": "s45小林",
+          "firstname": "翔太"
+        },
+        {
+          "username": "student46",
+          "password": "student46",
+          "email": "student46@moodleplayground.ac.jp",
+          "lastname": "s46小松",
+          "firstname": "涼子"
+        },
+        {
+          "username": "student47",
+          "password": "student47",
+          "email": "student47@moodleplayground.ac.jp",
+          "lastname": "s47斎藤",
+          "firstname": "翔太"
+        },
+        {
+          "username": "student48",
+          "password": "student48",
+          "email": "student48@moodleplayground.ac.jp",
+          "lastname": "s48坂井",
+          "firstname": "由紀"
+        },
+        {
+          "username": "student49",
+          "password": "student49",
+          "email": "student49@moodleplayground.ac.jp",
+          "lastname": "s49坂本",
+          "firstname": "明"
+        },
+        {
+          "username": "student50",
+          "password": "student50",
+          "email": "student50@moodleplayground.ac.jp",
+          "lastname": "s50柴田",
+          "firstname": "悠太"
+        },
+        {
+          "username": "student51",
+          "password": "student51",
+          "email": "student51@moodleplayground.ac.jp",
+          "lastname": "s51島田",
+          "firstname": "由紀"
+        },
+        {
+          "username": "student52",
+          "password": "student52",
+          "email": "student52@moodleplayground.ac.jp",
+          "lastname": "s52鈴木",
+          "firstname": "遥"
+        },
+        {
+          "username": "student53",
+          "password": "student53",
+          "email": "student53@moodleplayground.ac.jp",
+          "lastname": "s53関口",
+          "firstname": "蓮"
+        },
+        {
+          "username": "student54",
+          "password": "student54",
+          "email": "student54@moodleplayground.ac.jp",
+          "lastname": "s54瀬戸",
+          "firstname": "蓮"
+        },
+        {
+          "username": "student55",
+          "password": "student55",
+          "email": "student55@moodleplayground.ac.jp",
+          "lastname": "s55高木",
+          "firstname": "愛子"
+        },
+        {
+          "username": "student56",
+          "password": "student56",
+          "email": "student56@moodleplayground.ac.jp",
+          "lastname": "s56高田",
+          "firstname": "夏美"
+        },
+        {
+          "username": "student57",
+          "password": "student57",
+          "email": "student57@moodleplayground.ac.jp",
+          "lastname": "s57高橋",
+          "firstname": "奈緒"
+        },
+        {
+          "username": "student58",
+          "password": "student58",
+          "email": "student58@moodleplayground.ac.jp",
+          "lastname": "s58竹内",
+          "firstname": "結衣"
+        },
+        {
+          "username": "student59",
+          "password": "student59",
+          "email": "student59@moodleplayground.ac.jp",
+          "lastname": "s59千葉",
+          "firstname": "愛子"
+        },
+        {
+          "username": "student60",
+          "password": "student60",
+          "email": "student60@moodleplayground.ac.jp",
+          "lastname": "s60津田",
+          "firstname": "綾乃"
+        },
+        {
+          "username": "student61",
+          "password": "student61",
+          "email": "student61@moodleplayground.ac.jp",
+          "lastname": "s61土屋",
+          "firstname": "大輔"
+        },
+        {
+          "username": "student62",
+          "password": "student62",
+          "email": "student62@moodleplayground.ac.jp",
+          "lastname": "s62寺田",
+          "firstname": "愛子"
+        },
+        {
+          "username": "student63",
+          "password": "student63",
+          "email": "student63@moodleplayground.ac.jp",
+          "lastname": "s63戸田",
+          "firstname": "実"
+        },
+        {
+          "username": "student64",
+          "password": "student64",
+          "email": "student64@moodleplayground.ac.jp",
+          "lastname": "s64中川",
+          "firstname": "遥"
+        },
+        {
+          "username": "student65",
+          "password": "student65",
+          "email": "student65@moodleplayground.ac.jp",
+          "lastname": "s65中島",
+          "firstname": "香織"
+        },
+        {
+          "username": "student66",
+          "password": "student66",
+          "email": "student66@moodleplayground.ac.jp",
+          "lastname": "s66中田",
+          "firstname": "綾乃"
+        },
+        {
+          "username": "student67",
+          "password": "student67",
+          "email": "student67@moodleplayground.ac.jp",
+          "lastname": "s67中野",
+          "firstname": "沙織"
+        },
+        {
+          "username": "student68",
+          "password": "student68",
+          "email": "student68@moodleplayground.ac.jp",
+          "lastname": "s68中村",
+          "firstname": "和花"
+        },
+        {
+          "username": "student69",
+          "password": "student69",
+          "email": "student69@moodleplayground.ac.jp",
+          "lastname": "s69西川",
+          "firstname": "優子"
+        },
+        {
+          "username": "student70",
+          "password": "student70",
+          "email": "student70@moodleplayground.ac.jp",
+          "lastname": "s70野村",
+          "firstname": "真央"
+        },
+        {
+          "username": "student71",
+          "password": "student71",
+          "email": "student71@moodleplayground.ac.jp",
+          "lastname": "s71橋本",
+          "firstname": "遥"
+        },
+        {
+          "username": "student72",
+          "password": "student72",
+          "email": "student72@moodleplayground.ac.jp",
+          "lastname": "s72長谷川",
+          "firstname": "千尋"
+        },
+        {
+          "username": "student73",
+          "password": "student73",
+          "email": "student73@moodleplayground.ac.jp",
+          "lastname": "s73林",
+          "firstname": "葵"
+        },
+        {
+          "username": "student74",
+          "password": "student74",
+          "email": "student74@moodleplayground.ac.jp",
+          "lastname": "s74原",
+          "firstname": "蓮"
+        },
+        {
+          "username": "student75",
+          "password": "student75",
+          "email": "student75@moodleplayground.ac.jp",
+          "lastname": "s75樋口",
+          "firstname": "優子"
+        },
+        {
+          "username": "student76",
+          "password": "student76",
+          "email": "student76@moodleplayground.ac.jp",
+          "lastname": "s76平田",
+          "firstname": "奈緒"
+        },
+        {
+          "username": "student77",
+          "password": "student77",
+          "email": "student77@moodleplayground.ac.jp",
+          "lastname": "s77藤井",
+          "firstname": "和花"
+        },
+        {
+          "username": "student78",
+          "password": "student78",
+          "email": "student78@moodleplayground.ac.jp",
+          "lastname": "s78藤田",
+          "firstname": "悠太"
+        },
+        {
+          "username": "student79",
+          "password": "student79",
+          "email": "student79@moodleplayground.ac.jp",
+          "lastname": "s79藤原",
+          "firstname": "咲良"
+        },
+        {
+          "username": "student80",
+          "password": "student80",
+          "email": "student80@moodleplayground.ac.jp",
+          "lastname": "s80古川",
+          "firstname": "実"
+        },
+        {
+          "username": "student81",
+          "password": "student81",
+          "email": "student81@moodleplayground.ac.jp",
+          "lastname": "s81堀",
+          "firstname": "夏美"
+        },
+        {
+          "username": "student82",
+          "password": "student82",
+          "email": "student82@moodleplayground.ac.jp",
+          "lastname": "s82前田",
+          "firstname": "結衣"
+        },
+        {
+          "username": "student83",
+          "password": "student83",
+          "email": "student83@moodleplayground.ac.jp",
+          "lastname": "s83松井",
+          "firstname": "真一"
+        },
+        {
+          "username": "student84",
+          "password": "student84",
+          "email": "student84@moodleplayground.ac.jp",
+          "lastname": "s84松田",
+          "firstname": "博之"
+        },
+        {
+          "username": "student85",
+          "password": "student85",
+          "email": "student85@moodleplayground.ac.jp",
+          "lastname": "s85松本",
+          "firstname": "夏美"
+        },
+        {
+          "username": "student86",
+          "password": "student86",
+          "email": "student86@moodleplayground.ac.jp",
+          "lastname": "s86水野",
+          "firstname": "和花"
+        },
+        {
+          "username": "student87",
+          "password": "student87",
+          "email": "student87@moodleplayground.ac.jp",
+          "lastname": "s87宮崎",
+          "firstname": "亮"
+        },
+        {
+          "username": "student88",
+          "password": "student88",
+          "email": "student88@moodleplayground.ac.jp",
+          "lastname": "s88宮本",
+          "firstname": "誠"
+        },
+        {
+          "username": "student89",
+          "password": "student89",
+          "email": "student89@moodleplayground.ac.jp",
+          "lastname": "s89村上",
+          "firstname": "綾乃"
+        },
+        {
+          "username": "student90",
+          "password": "student90",
+          "email": "student90@moodleplayground.ac.jp",
+          "lastname": "s90村田",
+          "firstname": "沙織"
+        },
+        {
+          "username": "student91",
+          "password": "student91",
+          "email": "student91@moodleplayground.ac.jp",
+          "lastname": "s91森",
+          "firstname": "里奈"
+        },
+        {
+          "username": "student92",
+          "password": "student92",
+          "email": "student92@moodleplayground.ac.jp",
+          "lastname": "s92森田",
+          "firstname": "蓮"
+        },
+        {
+          "username": "student93",
+          "password": "student93",
+          "email": "student93@moodleplayground.ac.jp",
+          "lastname": "s93山口",
+          "firstname": "悠太"
+        },
+        {
+          "username": "student94",
+          "password": "student94",
+          "email": "student94@moodleplayground.ac.jp",
+          "lastname": "s94山崎",
+          "firstname": "博之"
+        },
+        {
+          "username": "student95",
+          "password": "student95",
+          "email": "student95@moodleplayground.ac.jp",
+          "lastname": "s95山田",
+          "firstname": "一郎"
+        },
+        {
+          "username": "student96",
+          "password": "student96",
+          "email": "student96@moodleplayground.ac.jp",
+          "lastname": "s96山本",
+          "firstname": "千尋"
+        },
+        {
+          "username": "student97",
+          "password": "student97",
+          "email": "student97@moodleplayground.ac.jp",
+          "lastname": "s97横山",
+          "firstname": "陽菜"
+        },
+        {
+          "username": "student98",
+          "password": "student98",
+          "email": "student98@moodleplayground.ac.jp",
+          "lastname": "s98吉田",
+          "firstname": "直樹"
+        },
+        {
+          "username": "student99",
+          "password": "student99",
+          "email": "student99@moodleplayground.ac.jp",
+          "lastname": "s99渡辺",
+          "firstname": "明"
+        }
+      ]
+    },
+    {
+      "step": "runPhpCode",
+      "critical": true,
+      "code": "define('CLI_SCRIPT', true);\nrequire('/www/moodle/config.php');\nrequire_once($CFG->dirroot . '/user/lib.php');\n$profiles = [\n    ['username' => 'teacher01', 'lastnamephonetic' => 'あいざわ', 'firstnamephonetic' => 'たけし', 'lang' => 'ja'],\n    ['username' => 'teacher02', 'lastnamephonetic' => 'あさい', 'firstnamephonetic' => 'ひな', 'lang' => 'ja'],\n    ['username' => 'teacher03', 'lastnamephonetic' => 'かわぐち', 'firstnamephonetic' => 'みのる', 'lang' => 'ja'],\n    ['username' => 'teacher04', 'lastnamephonetic' => 'きむら', 'firstnamephonetic' => 'たけし', 'lang' => 'ja'],\n    ['username' => 'teacher05', 'lastnamephonetic' => 'さかもと', 'firstnamephonetic' => 'まこと', 'lang' => 'ja'],\n    ['username' => 'teacher06', 'lastnamephonetic' => 'すぎもと', 'firstnamephonetic' => 'だいすけ', 'lang' => 'ja'],\n    ['username' => 'teacher07', 'lastnamephonetic' => 'せと', 'firstnamephonetic' => 'りょうこ', 'lang' => 'ja'],\n    ['username' => 'teacher08', 'lastnamephonetic' => 'みずの', 'firstnamephonetic' => 'だいすけ', 'lang' => 'ja'],\n    ['username' => 'teacher09', 'lastnamephonetic' => 'やまぐち', 'firstnamephonetic' => 'だいすけ', 'lang' => 'ja'],\n    ['username' => 'teacher10', 'lastnamephonetic' => 'よしかわ', 'firstnamephonetic' => 'さおり', 'lang' => 'ja'],\n    ['username' => 'student01', 'lastnamephonetic' => 'あいかわ', 'firstnamephonetic' => 'けんた', 'lang' => 'ja'],\n    ['username' => 'student02', 'lastnamephonetic' => 'あいざわ', 'firstnamephonetic' => 'たくや', 'lang' => 'ja'],\n    ['username' => 'student03', 'lastnamephonetic' => 'あおき', 'firstnamephonetic' => 'だいすけ', 'lang' => 'ja'],\n    ['username' => 'student04', 'lastnamephonetic' => 'あおやま', 'firstnamephonetic' => 'ゆうこ', 'lang' => 'ja'],\n    ['username' => 'student05', 'lastnamephonetic' => 'あかい', 'firstnamephonetic' => 'かずや', 'lang' => 'ja'],\n    ['username' => 'student06', 'lastnamephonetic' => 'あきやま', 'firstnamephonetic' => 'あいこ', 'lang' => 'ja'],\n    ['username' => 'student07', 'lastnamephonetic' => 'あさい', 'firstnamephonetic' => 'かおり', 'lang' => 'ja'],\n    ['username' => 'student08', 'lastnamephonetic' => 'あだち', 'firstnamephonetic' => 'ゆい', 'lang' => 'ja'],\n    ['username' => 'student09', 'lastnamephonetic' => 'あべ', 'firstnamephonetic' => 'はるか', 'lang' => 'ja'],\n    ['username' => 'student10', 'lastnamephonetic' => 'あまの', 'firstnamephonetic' => 'りょう', 'lang' => 'ja'],\n    ['username' => 'student11', 'lastnamephonetic' => 'あらい', 'firstnamephonetic' => 'あおい', 'lang' => 'ja'],\n    ['username' => 'student12', 'lastnamephonetic' => 'ありた', 'firstnamephonetic' => 'ちひろ', 'lang' => 'ja'],\n    ['username' => 'student13', 'lastnamephonetic' => 'いけだ', 'firstnamephonetic' => 'しょうた', 'lang' => 'ja'],\n    ['username' => 'student14', 'lastnamephonetic' => 'いしい', 'firstnamephonetic' => 'ひろゆき', 'lang' => 'ja'],\n    ['username' => 'student15', 'lastnamephonetic' => 'いしかわ', 'firstnamephonetic' => 'ゆうた', 'lang' => 'ja'],\n    ['username' => 'student16', 'lastnamephonetic' => 'いしだ', 'firstnamephonetic' => 'たけし', 'lang' => 'ja'],\n    ['username' => 'student17', 'lastnamephonetic' => 'いずみ', 'firstnamephonetic' => 'わか', 'lang' => 'ja'],\n    ['username' => 'student18', 'lastnamephonetic' => 'いのうえ', 'firstnamephonetic' => 'しょうた', 'lang' => 'ja'],\n    ['username' => 'student19', 'lastnamephonetic' => 'いまい', 'firstnamephonetic' => 'いちろう', 'lang' => 'ja'],\n    ['username' => 'student20', 'lastnamephonetic' => 'いわさき', 'firstnamephonetic' => 'ゆき', 'lang' => 'ja'],\n    ['username' => 'student21', 'lastnamephonetic' => 'いわた', 'firstnamephonetic' => 'なつみ', 'lang' => 'ja'],\n    ['username' => 'student22', 'lastnamephonetic' => 'うえだ', 'firstnamephonetic' => 'あおい', 'lang' => 'ja'],\n    ['username' => 'student23', 'lastnamephonetic' => 'うえむら', 'firstnamephonetic' => 'けんた', 'lang' => 'ja'],\n    ['username' => 'student24', 'lastnamephonetic' => 'うちだ', 'firstnamephonetic' => 'さおり', 'lang' => 'ja'],\n    ['username' => 'student25', 'lastnamephonetic' => 'うの', 'firstnamephonetic' => 'はるか', 'lang' => 'ja'],\n    ['username' => 'student26', 'lastnamephonetic' => 'えんどう', 'firstnamephonetic' => 'りょう', 'lang' => 'ja'],\n    ['username' => 'student27', 'lastnamephonetic' => 'おおくぼ', 'firstnamephonetic' => 'ひな', 'lang' => 'ja'],\n    ['username' => 'student28', 'lastnamephonetic' => 'おおしま', 'firstnamephonetic' => 'たくや', 'lang' => 'ja'],\n    ['username' => 'student29', 'lastnamephonetic' => 'おおた', 'firstnamephonetic' => 'ひな', 'lang' => 'ja'],\n    ['username' => 'student30', 'lastnamephonetic' => 'おおつか', 'firstnamephonetic' => 'なお', 'lang' => 'ja'],\n    ['username' => 'student31', 'lastnamephonetic' => 'おおにし', 'firstnamephonetic' => 'えみ', 'lang' => 'ja'],\n    ['username' => 'student32', 'lastnamephonetic' => 'おおの', 'firstnamephonetic' => 'なつみ', 'lang' => 'ja'],\n    ['username' => 'student33', 'lastnamephonetic' => 'おかだ', 'firstnamephonetic' => 'ひな', 'lang' => 'ja'],\n    ['username' => 'student34', 'lastnamephonetic' => 'おがわ', 'firstnamephonetic' => 'わか', 'lang' => 'ja'],\n    ['username' => 'student35', 'lastnamephonetic' => 'おの', 'firstnamephonetic' => 'えみ', 'lang' => 'ja'],\n    ['username' => 'student36', 'lastnamephonetic' => 'かねこ', 'firstnamephonetic' => 'かずや', 'lang' => 'ja'],\n    ['username' => 'student37', 'lastnamephonetic' => 'かわかみ', 'firstnamephonetic' => 'いちろう', 'lang' => 'ja'],\n    ['username' => 'student38', 'lastnamephonetic' => 'かわぐち', 'firstnamephonetic' => 'りょう', 'lang' => 'ja'],\n    ['username' => 'student39', 'lastnamephonetic' => 'かわむら', 'firstnamephonetic' => 'みさき', 'lang' => 'ja'],\n    ['username' => 'student40', 'lastnamephonetic' => 'きくち', 'firstnamephonetic' => 'たけし', 'lang' => 'ja'],\n    ['username' => 'student41', 'lastnamephonetic' => 'きむら', 'firstnamephonetic' => 'あいこ', 'lang' => 'ja'],\n    ['username' => 'student42', 'lastnamephonetic' => 'くまがい', 'firstnamephonetic' => 'なおき', 'lang' => 'ja'],\n    ['username' => 'student43', 'lastnamephonetic' => 'くろだ', 'firstnamephonetic' => 'れん', 'lang' => 'ja'],\n    ['username' => 'student44', 'lastnamephonetic' => 'ごとう', 'firstnamephonetic' => 'まこと', 'lang' => 'ja'],\n    ['username' => 'student45', 'lastnamephonetic' => 'こばやし', 'firstnamephonetic' => 'しょうた', 'lang' => 'ja'],\n    ['username' => 'student46', 'lastnamephonetic' => 'こまつ', 'firstnamephonetic' => 'りょうこ', 'lang' => 'ja'],\n    ['username' => 'student47', 'lastnamephonetic' => 'さいとう', 'firstnamephonetic' => 'しょうた', 'lang' => 'ja'],\n    ['username' => 'student48', 'lastnamephonetic' => 'さかい', 'firstnamephonetic' => 'ゆき', 'lang' => 'ja'],\n    ['username' => 'student49', 'lastnamephonetic' => 'さかもと', 'firstnamephonetic' => 'あきら', 'lang' => 'ja'],\n    ['username' => 'student50', 'lastnamephonetic' => 'しばた', 'firstnamephonetic' => 'ゆうた', 'lang' => 'ja'],\n    ['username' => 'student51', 'lastnamephonetic' => 'しまだ', 'firstnamephonetic' => 'ゆき', 'lang' => 'ja'],\n    ['username' => 'student52', 'lastnamephonetic' => 'すずき', 'firstnamephonetic' => 'はるか', 'lang' => 'ja'],\n    ['username' => 'student53', 'lastnamephonetic' => 'せきぐち', 'firstnamephonetic' => 'れん', 'lang' => 'ja'],\n    ['username' => 'student54', 'lastnamephonetic' => 'せと', 'firstnamephonetic' => 'れん', 'lang' => 'ja'],\n    ['username' => 'student55', 'lastnamephonetic' => 'たかぎ', 'firstnamephonetic' => 'あいこ', 'lang' => 'ja'],\n    ['username' => 'student56', 'lastnamephonetic' => 'たかだ', 'firstnamephonetic' => 'なつみ', 'lang' => 'ja'],\n    ['username' => 'student57', 'lastnamephonetic' => 'たかはし', 'firstnamephonetic' => 'なお', 'lang' => 'ja'],\n    ['username' => 'student58', 'lastnamephonetic' => 'たけうち', 'firstnamephonetic' => 'ゆい', 'lang' => 'ja'],\n    ['username' => 'student59', 'lastnamephonetic' => 'ちば', 'firstnamephonetic' => 'あいこ', 'lang' => 'ja'],\n    ['username' => 'student60', 'lastnamephonetic' => 'つだ', 'firstnamephonetic' => 'あやの', 'lang' => 'ja'],\n    ['username' => 'student61', 'lastnamephonetic' => 'つちや', 'firstnamephonetic' => 'だいすけ', 'lang' => 'ja'],\n    ['username' => 'student62', 'lastnamephonetic' => 'てらだ', 'firstnamephonetic' => 'あいこ', 'lang' => 'ja'],\n    ['username' => 'student63', 'lastnamephonetic' => 'とだ', 'firstnamephonetic' => 'みのる', 'lang' => 'ja'],\n    ['username' => 'student64', 'lastnamephonetic' => 'なかがわ', 'firstnamephonetic' => 'はるか', 'lang' => 'ja'],\n    ['username' => 'student65', 'lastnamephonetic' => 'なかじま', 'firstnamephonetic' => 'かおり', 'lang' => 'ja'],\n    ['username' => 'student66', 'lastnamephonetic' => 'なかた', 'firstnamephonetic' => 'あやの', 'lang' => 'ja'],\n    ['username' => 'student67', 'lastnamephonetic' => 'なかの', 'firstnamephonetic' => 'さおり', 'lang' => 'ja'],\n    ['username' => 'student68', 'lastnamephonetic' => 'なかむら', 'firstnamephonetic' => 'わか', 'lang' => 'ja'],\n    ['username' => 'student69', 'lastnamephonetic' => 'にしかわ', 'firstnamephonetic' => 'ゆうこ', 'lang' => 'ja'],\n    ['username' => 'student70', 'lastnamephonetic' => 'のむら', 'firstnamephonetic' => 'まお', 'lang' => 'ja'],\n    ['username' => 'student71', 'lastnamephonetic' => 'はしもと', 'firstnamephonetic' => 'はるか', 'lang' => 'ja'],\n    ['username' => 'student72', 'lastnamephonetic' => 'はせがわ', 'firstnamephonetic' => 'ちひろ', 'lang' => 'ja'],\n    ['username' => 'student73', 'lastnamephonetic' => 'はやし', 'firstnamephonetic' => 'あおい', 'lang' => 'ja'],\n    ['username' => 'student74', 'lastnamephonetic' => 'はら', 'firstnamephonetic' => 'れん', 'lang' => 'ja'],\n    ['username' => 'student75', 'lastnamephonetic' => 'ひぐち', 'firstnamephonetic' => 'ゆうこ', 'lang' => 'ja'],\n    ['username' => 'student76', 'lastnamephonetic' => 'ひらた', 'firstnamephonetic' => 'なお', 'lang' => 'ja'],\n    ['username' => 'student77', 'lastnamephonetic' => 'ふじい', 'firstnamephonetic' => 'わか', 'lang' => 'ja'],\n    ['username' => 'student78', 'lastnamephonetic' => 'ふじた', 'firstnamephonetic' => 'ゆうた', 'lang' => 'ja'],\n    ['username' => 'student79', 'lastnamephonetic' => 'ふじわら', 'firstnamephonetic' => 'さくら', 'lang' => 'ja'],\n    ['username' => 'student80', 'lastnamephonetic' => 'ふるかわ', 'firstnamephonetic' => 'みのる', 'lang' => 'ja'],\n    ['username' => 'student81', 'lastnamephonetic' => 'ほり', 'firstnamephonetic' => 'なつみ', 'lang' => 'ja'],\n    ['username' => 'student82', 'lastnamephonetic' => 'まえだ', 'firstnamephonetic' => 'ゆい', 'lang' => 'ja'],\n    ['username' => 'student83', 'lastnamephonetic' => 'まつい', 'firstnamephonetic' => 'しんいち', 'lang' => 'ja'],\n    ['username' => 'student84', 'lastnamephonetic' => 'まつだ', 'firstnamephonetic' => 'ひろゆき', 'lang' => 'ja'],\n    ['username' => 'student85', 'lastnamephonetic' => 'まつもと', 'firstnamephonetic' => 'なつみ', 'lang' => 'ja'],\n    ['username' => 'student86', 'lastnamephonetic' => 'みずの', 'firstnamephonetic' => 'わか', 'lang' => 'ja'],\n    ['username' => 'student87', 'lastnamephonetic' => 'みやざき', 'firstnamephonetic' => 'りょう', 'lang' => 'ja'],\n    ['username' => 'student88', 'lastnamephonetic' => 'みやもと', 'firstnamephonetic' => 'まこと', 'lang' => 'ja'],\n    ['username' => 'student89', 'lastnamephonetic' => 'むらかみ', 'firstnamephonetic' => 'あやの', 'lang' => 'ja'],\n    ['username' => 'student90', 'lastnamephonetic' => 'むらた', 'firstnamephonetic' => 'さおり', 'lang' => 'ja'],\n    ['username' => 'student91', 'lastnamephonetic' => 'もり', 'firstnamephonetic' => 'りな', 'lang' => 'ja'],\n    ['username' => 'student92', 'lastnamephonetic' => 'もりた', 'firstnamephonetic' => 'れん', 'lang' => 'ja'],\n    ['username' => 'student93', 'lastnamephonetic' => 'やまぐち', 'firstnamephonetic' => 'ゆうた', 'lang' => 'ja'],\n    ['username' => 'student94', 'lastnamephonetic' => 'やまざき', 'firstnamephonetic' => 'ひろゆき', 'lang' => 'ja'],\n    ['username' => 'student95', 'lastnamephonetic' => 'やまだ', 'firstnamephonetic' => 'いちろう', 'lang' => 'ja'],\n    ['username' => 'student96', 'lastnamephonetic' => 'やまもと', 'firstnamephonetic' => 'ちひろ', 'lang' => 'ja'],\n    ['username' => 'student97', 'lastnamephonetic' => 'よこやま', 'firstnamephonetic' => 'ひな', 'lang' => 'ja'],\n    ['username' => 'student98', 'lastnamephonetic' => 'よしだ', 'firstnamephonetic' => 'なおき', 'lang' => 'ja'],\n    ['username' => 'student99', 'lastnamephonetic' => 'わたなべ', 'firstnamephonetic' => 'あきら', 'lang' => 'ja']\n];\nforeach ($profiles as $profile) {\n    $user = $DB->get_record('user', ['username' => $profile['username'], 'deleted' => 0], '*', MUST_EXIST);\n    $profile['id'] = $user->id;\n    unset($profile['username']);\n    user_update_user((object)$profile, false, false);\n}\n$admin = get_admin();\nuser_update_user((object)['id' => $admin->id, 'lang' => 'ja'], false, false);\necho json_encode(['ok' => true, 'updated' => count($profiles)]);\n"
+    },
+    {
       "step": "createCategory",
       "name": "Playground Courses"
     },
     {
       "step": "createCourse",
-      "fullname": "Getting Started",
-      "shortname": "PLAY101",
+      "critical": true,
+      "fullname": "サンプルコース01",
+      "shortname": "SAMPLE01",
       "category": "Playground Courses",
-      "summary": "Welcome to Moodle Playground! This starter course is a sandbox for you to explore Moodle features — add activities, upload resources, and experiment freely. Everything resets when you close the tab."
+      "summary": "日本語のMoodleを試すためのサンプルコースです。"
     },
     {
-      "step": "enrolUser",
-      "username": "{{ADMIN_USER}}",
-      "course": "PLAY101",
-      "role": "editingteacher"
-    },
-    {
-      "step": "setLandingPage",
-      "path": "/"
+      "step": "enrolUsers",
+      "critical": true,
+      "enrolments": [
+        {
+          "username": "teacher01",
+          "course": "SAMPLE01",
+          "role": "editingteacher"
+        },
+        {
+          "username": "student01",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student02",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student03",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student04",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student05",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student06",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student07",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student08",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student09",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student10",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student11",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student12",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student13",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student14",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student15",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student16",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student17",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student18",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student19",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student20",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student21",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student22",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student23",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student24",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student25",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student26",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student27",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student28",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student29",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student30",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student31",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student32",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student33",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student34",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student35",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student36",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student37",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student38",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student39",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student40",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student41",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student42",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student43",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student44",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student45",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student46",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student47",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student48",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student49",
+          "course": "SAMPLE01",
+          "role": "student"
+        },
+        {
+          "username": "student50",
+          "course": "SAMPLE01",
+          "role": "student"
+        }
+      ]
     }
   ]
 }
