@@ -265,6 +265,17 @@ jobs:
           # them; e2e below serves this same _site, exercising the chunked path.
           node scripts/chunk-bundles.mjs _site
 
+      - name: Bundle the default Japanese language pack
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p _site/assets/lang
+          curl --fail --location --retry 3 --retry-all-errors --connect-timeout 20 --max-time 180 \
+            'https://download.moodle.org/download.php/direct/langpack/5.3/ja.zip' \
+            --output _site/assets/lang/ja.zip
+          unzip -tqq _site/assets/lang/ja.zip
+          unzip -Z1 _site/assets/lang/ja.zip | grep -qx 'ja/langconfig.php'
+
       - name: Upload site artifact
         uses: actions/upload-artifact@v7
         with:
